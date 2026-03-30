@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OpenPup — 记得你是谁的小狗狗</title>
 <meta name="description" content="不是又一个 ChatGPT 套壳。openpup 记得你是谁，不只是你说了什么。本地优先，数据可见，越用越懂你。">
+<link rel="icon" href="icon.ico" sizes="any">
+<link rel="icon" href="icon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -61,8 +63,16 @@ nav {
   color: var(--ink);
   text-decoration: none;
   letter-spacing: -.3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.nav-logo span { color: var(--green); }
+.nav-logo-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+.nav-logo-text span { color: var(--green); }
 .nav-links { display: flex; gap: 32px; align-items: center; }
 .nav-links a {
   font-size: 13.5px;
@@ -600,7 +610,7 @@ footer a:hover { color: var(--ink); }
 
 <!-- Nav -->
 <nav>
-  <a href="#" class="nav-logo">open<span>pup</span></a>
+  <a href="#" class="nav-logo"><img src="icon.png" alt="OpenPup" class="nav-logo-icon"><span class="nav-logo-text">open<span>pup</span></span></a>
   <div class="nav-links">
     <a href="#how">工作原理</a>
     <a href="#features">功能</a>
@@ -872,7 +882,7 @@ footer a:hover { color: var(--ink); }
 
 <!-- Footer -->
 <footer>
-  <a href="#" class="nav-logo" style="font-family:var(--mono);font-size:13px;color:var(--ink-3)">open<span style="color:var(--green)">pup</span></a>
+  <a href="#" class="nav-logo" style="font-family:var(--mono);font-size:13px;color:var(--ink-3)"><img src="icon.png" alt="OpenPup" class="nav-logo-icon" style="width:20px;height:20px"><span class="nav-logo-text">open<span style="color:var(--green)">pup</span></span></a>
   <div class="footer-links">
     <a href="https://github.com/openpup/openpup">GitHub</a>
     <a href="https://github.com/openpup/openpup/blob/main/docs/architecture.md">文档</a>
